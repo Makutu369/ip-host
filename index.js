@@ -1,8 +1,18 @@
 const express = require("express");
+require("dotenv").config();
 const geoip = require("geoip-lite");
 
-const myip = "154.160.27.185";
+const PORT = process.env.port | process.env.PORT;
+const app = express();
+app.use(express.json());
 
-const geo = geoip.lookup(myip);
+app.post("/api/ip", (req, res) => {
+  const ip = req.body.IP;
+  const geo = geoip.lookup(ip);
+  console.log(geo);
+  res.send(geo);
+});
 
-console.log(geo);
+app.listen(PORT, () => {
+  console.log(`server running at http://localhost:${[PORT]}`);
+});
