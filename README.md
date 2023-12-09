@@ -3,12 +3,19 @@ Api implementation of ip to host using maxmind.com geopip database
 
 ## installation 
 1. clone the repository
-2. install the dependencies
-   - at the root of the project folder
-   <pre>
-     npm installl
-   </pre>
+   ```
+   git clone https://github.com/Makutu369/ip-host.git
+   ```
+3. install the dependencies
+   at the root of the project folder
+   ```
+   npm install
+   ```
+     
+   
 4. run the program
-   <pre>
-     node index.js
-   </pre>
+   ```
+   node index.js
+   ```
+     
+
