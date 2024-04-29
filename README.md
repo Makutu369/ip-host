@@ -11,12 +11,11 @@ Api implementation of ip to host using maxmind.com geopip database
    ```
    npm install
    ```
-     ![ip-host](https://github.com/Makutu369/ip-host/assets/66660816/fa020e31-e445-46aa-b3da-56d9a7e5e789)
-
+    
    
 4. run the program
    ```
    node index.js
    ```
-     
+      ![ip-host](https://github.com/Makutu369/ip-host/assets/66660816/fa020e31-e445-46aa-b3da-56d9a7e5e789)
 
